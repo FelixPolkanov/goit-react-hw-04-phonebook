@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Title, Input } from './Filter.styled';
 
-export const Filter = ({ value, onFilter }) => {
+
+export function Filter ({ value, onFilter }) {
   return (
     <>
       <Title>Find contacts by name</Title>

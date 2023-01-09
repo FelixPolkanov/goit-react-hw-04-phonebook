@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Btn, Item } from './ContactItem.styled';
 
-export const ContactItem = ({ id, name, number, del }) => {
+export function ContactItem ({ id, name, number, del }) {
   return <Item>
     <span>{name}: {number}</span>
     <Btn onClick={() => del(id)}>Delete</Btn>
